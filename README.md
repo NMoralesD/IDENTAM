@@ -33,9 +33,21 @@ Several parameters should be modified in the launch_identam.sh file, as:
 
 ### OUTPUTs
 In the results folder you will find: 
-```LTR-RT_TR.tsv  A file with the genomic positions of potential LTR-RT Tandems, as well as the related family according to TEsorter, information about their completeness and their domains.
-LTR-RT_related.tsv  A file with the genomic positions of potential LTR-RT related Tandems, as well as the related superfamily family according to TEsorter.```
++ LTR-RT_TR.tsv  A file with the genomic positions of potential LTR-RT Tandems, as well as the related family according to TEsorter, information about their completeness and their domains.
++ LTR-RT_related.tsv  A file with the genomic positions of potential LTR-RT related Tandems, as well as the related superfamily family according to TEsorter.
 
+## Methods
+IDENTAM detects potential LTR-RT Tandems through two different methods. 
+![5](https://github.com/NMoralesD/IDENTAM/assets/173355210/be885e11-8034-4952-9c53-be4f7a37536a)
+![6](https://github.com/NMoralesD/IDENTAM/assets/173355210/ad7e5377-0422-4969-a5a9-d9bbaf5abf49)
+![8](https://github.com/NMoralesD/IDENTAM/assets/173355210/758300b7-f678-4d23-8661-fed88cadd4b3)
+
+
+
+### METHOD 1 
+It detects two close (≤ 5Kb) internal LTR-RT regions from the same family. Then, it checks if there are surrounding LTRs and creates a bed file with potential LTR-RT Tandems.
+### METHOD 2
+It detects three close LTRs from the same family. Then, it checks if there are internal LTR-RT regions from the same family between the LTRs and creates a bed file with potential LTR-RT Tandems.
 
 
 
