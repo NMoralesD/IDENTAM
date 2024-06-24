@@ -1,9 +1,4 @@
 #!/bin/bash -l
-#SBATCH --job-name="iden_tands"
-#SBATCH --ntasks=1
-#SBATCH --mem=40G
-#SBATCH --cpus-per-task=1
-#IRGSP.fa.out.gff
 # #SCRIPT: Identify tandems
 # #Author: M-D,N
 
