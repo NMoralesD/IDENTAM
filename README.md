@@ -11,12 +11,14 @@ cd IDENTAM
 ## REQUIREMENTS
 IDENTAM requires also the installation of TEsorter. 
 All the information neccesary for installation can be find in: https://github.com/zhangrengang/TEsorter
+Also, IDENTAM requires bedtools. 
+All the information neccesary for installation can be find in: https://bioconda.github.io/recipes/bedtools/README.html
 
 ## USAGE
 For identifying potential LTR-RT Tandems it is neccesary three input files are needed: 
 - Transposable Element (TE) library with LTRs and internal regions annotated separately
 - Reference genome
-- Repeatmasker output
+- Repeatmasker output 
 
 Then, to run IDENTAM we simply type: 
 
