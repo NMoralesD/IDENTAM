@@ -5,8 +5,8 @@ This repository constains the code for identifying potential LTR-retrotransposon
 
 ## INSTALLATION
 First, to obtain the repository from GitHub:
-git clone: ADRESS
-cd IDENTAM
+git clone: https://github.com/NMoralesD/IDENTAM
+
 
 ## REQUIREMENTS
 IDENTAM requires also the installation of TEsorter. 
