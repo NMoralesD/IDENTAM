@@ -38,11 +38,8 @@ In the results folder you will find:
 
 ## Methods
 IDENTAM detects potential LTR-RT Tandems through two different methods. 
-![5](https://github.com/NMoralesD/IDENTAM/assets/173355210/be885e11-8034-4952-9c53-be4f7a37536a)
-![6](https://github.com/NMoralesD/IDENTAM/assets/173355210/ad7e5377-0422-4969-a5a9-d9bbaf5abf49)
-![8](https://github.com/NMoralesD/IDENTAM/assets/173355210/758300b7-f678-4d23-8661-fed88cadd4b3)
 
-
+<img src="https://github.com/NMoralesD/IDENTAM/assets/173355210/07552642-df4f-4e63-a496-d4eed9a679f1" alt="8" style="width:60%; height:auto;">
 
 ### METHOD 1 
 It detects two close (≤ 5Kb) internal LTR-RT regions from the same family. Then, it checks if there are surrounding LTRs and creates a bed file with potential LTR-RT Tandems.
