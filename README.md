@@ -20,18 +20,10 @@ For identifying potential LTR-RT Tandems it is neccesary three input files are n
 - Reference genome
 - Repeatmasker output 
 
-Then, to run IDENTAM we simply type: 
+Then, to run IDENTAM type: 
 
-```launch_identam.sh```
 
-Several parameters should be modified in the launch_identam.sh file, as: 
-+ Path to the reference file
-+ Path to the RepeatMasker output file
-+ Name of the accession
-+ Maximum distance between internal regions of the TE
-+ Minimum length of the internal regions
-+ Minimum lenght of the LTR-RT Tandems
-+ Maximum distance between LTRs
+```sbatch mods/identify_tandems_2modulesv3.sh path/to/reference path/to/TE_library path/to/RepeatMasker_output Distance_between_internal_regions Minimum_internal_region_lenght Minimum_element_lenght Distance_between_LTRs  Maximum_locus_lenght Accession_name```
 
 ### OUTPUTs
 In the results folder you will find: 
