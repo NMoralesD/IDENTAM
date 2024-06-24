@@ -5,7 +5,7 @@ This repository constains the code for identifying potential LTR-retrotransposon
 
 ## INSTALLATION
 First, to obtain the repository from GitHub:
-git clone: https://github.com/NMoralesD/IDENTAM
+```git clone: https://github.com/NMoralesD/IDENTAM```
 
 
 ## REQUIREMENTS
