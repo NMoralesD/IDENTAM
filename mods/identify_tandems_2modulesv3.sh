@@ -1,8 +1,4 @@
 #!/bin/bash -l
-#SBATCH --job-name="iden_tands"
-#SBATCH --ntasks=1
-#SBATCH --mem=40G
-#SBATCH --cpus-per-task=1
 
 # #DATA TO INTRODUCE.- PART I 
 reference=$1
@@ -14,14 +10,6 @@ minimum_element_length=$6
 distance_between_ltrs=$7
 locus_length=$8
 accession=$9
-
-# #DATA TO INTRODUCE.- PART II 
-# #Load conda
-module load conda
-# #Open environment
-source activate myenv
-# #Activate module
-module load bedtools
 
 # #Identify consensuses length
 cat $library | seqkit fx2tab --length | awk -F "\t" '{print $1"#"$4}' | tr '#' '\t' | awk '{print $1"#"$3}' > cons_lengths.txt 
