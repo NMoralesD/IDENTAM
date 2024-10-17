@@ -12,6 +12,7 @@ First, to obtain the repository from GitHub:
 ## REQUIREMENTS
 IDENTAM requires the installation of TEsorter. 
 All the information necessary for installation can be found at: https://github.com/zhangrengang/TEsorter
+
 Also, IDENTAM requires bedtools. 
 All the information neccesary for installation can be found at: https://bioconda.github.io/recipes/bedtools/README.html
 
