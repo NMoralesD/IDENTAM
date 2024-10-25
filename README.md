@@ -28,12 +28,12 @@ Then, to run IDENTAM, use the following command:
 
 As shown in the code, several parameters can be modified. The default parameters are listed below:
 
-Distance_between_internal_regions (default: 5000 bp): This is the distance, in base pairs, between two internal regions of a TE.
-Minimum_internal_region_length (default: 500 bp): This is the minimum length, in base pairs, of the internal regions of a TE.
-Minimum_element_length (default: 1000 bp): This is the minimum length, in base pairs, of a potential LTR-RT tandem.
-Distance_between_LTRs (default: 15,000 bp): This is the distance, in base pairs, between LTRs in a potential LTR-RT tandem.
-Maximum_locus_length (default: 40,000 bp): This is the maximum distance, in base pairs, to extend an LTR-RT tandem region if another one is nearby.
-Accession_name: The species' name. For example, "Nipponbare."
++ Distance_between_internal_regions (default: 5000 bp): This is the distance, in base pairs, between two internal regions of a TE.
++ Minimum_internal_region_length (default: 500 bp): This is the minimum length, in base pairs, of the internal regions of a TE.
++ Minimum_element_length (default: 1000 bp): This is the minimum length, in base pairs, of a potential LTR-RT tandem.
++ Distance_between_LTRs (default: 15,000 bp): This is the distance, in base pairs, between LTRs in a potential LTR-RT tandem.
++ Maximum_locus_length (default: 40,000 bp): This is the maximum distance, in base pairs, to extend an LTR-RT tandem region if another one is nearby.
++ Accession_name: The species' name. For example, "Nipponbare."
 
 ### OUTPUTs
 In the results folder, you will find the following files:
