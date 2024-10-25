@@ -48,19 +48,19 @@ python3 mods/ltr_matcher_4.py sed.genome.lengths.gff INT_TE_pairs_same_family.gf
 # #Identify tandem locus
 python3 mods/identify_locus_5.py INT_result_full_tandems.gff INT_result_full_tandems_locus.gff f1_locus.gff $locus_length
 
-#Filter by INT length
+# #Filter by INT length
 python3 mods/filter_INTv3_6.py f1_locus.gff filtered_final_1_locus.gff $minimum_int_length
 
-#Bed file
+# #Bed file
 python3 mods/gff2bed.py filtered_final_1_locus.gff f1_regions.bed $accession
 
-#Filter by total length of the LTR-RT sequence
+# #Filter by total length of the LTR-RT sequence
 python3 mods/filter_complete_length.py f1_regions.bed f1_filtered_regions.bed $minimum_element_length
 
-#Extract region
+# #Extract region
 bedtools getfasta -fi $reference -bed f1_filtered_regions.bed -name -fo f1_regions.fa
 
-#Filter by TEsorter
+# #Filter by TEsorter
 TEsorter f1_regions.fa -db rexdb-plant 
 
 # #PART 2.- LTRs 70%
@@ -83,7 +83,7 @@ cat LTR_TE_triplets_same_family.gff | sort -k1,1 -k2,2n | sed 's/\b\.0\b//g' > s
 # #Search for INTs between every LTR 
 python3 mods/int_matcher_9.py sed.genome.lengths.gff sorted_LTR_TE_triplets_same_family.gff LTR_result_full_tandems.gff
 
-#Filter INTs of different families
+# #Filter INTs of different families
 python3 mods/familyINT_10.py LTR_result_full_tandems.gff filtered_INT_LTR_result_full_tandems.gff
 
 # #Identify tandem locus
