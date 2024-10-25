@@ -24,7 +24,7 @@ For identifying potential LTR-RT Tandems with IDENTAM we need 3 input files:
 
 Then, to run IDENTAM, use the following command:
 
-```sbatch mods/identify_tandems_2modulesv3.sh path/to/reference path/to/TE_library path/to/RepeatMasker_output Distance_between_internal_regions Minimum_internal_region_lenght Minimum_element_lenght Distance_between_LTRs  Maximum_locus_lenght Accession_name```
+```sh mods/identify_tandems_2modulesv3.sh path/to/reference path/to/TE_library path/to/RepeatMasker_output Distance_between_internal_regions Minimum_internal_region_lenght Minimum_element_lenght Distance_between_LTRs  Maximum_locus_lenght Accession_name```
 
 As shown in the code, several parameters can be modified. The default parameters are listed below:
 
@@ -34,6 +34,10 @@ As shown in the code, several parameters can be modified. The default parameters
 + Distance_between_LTRs (default: 15,000 bp): This is the distance, in base pairs, between LTRs in a potential LTR-RT tandem.
 + Maximum_locus_length (default: 40,000 bp): This is the maximum distance, in base pairs, to extend an LTR-RT tandem region if another one is nearby.
 + Accession_name: The species' name. For example, "Nipponbare."
+
+Here, we present the code for running IDENTAM using the default parameters:
+
+```sh mods/identify_tandems_2modulesv3.sh path/to/Nipponbare.fa path/to/Rice_TE_library.fa path/to/Rice_RepeatMasker_output.gff 500 500 1000 15000  40000 Nipponbare```
 
 ### OUTPUTs
 In the results folder, you will find the following files:
