@@ -18,7 +18,7 @@ https://bioconda.github.io/recipes/bedtools/README.html
 
 ## USAGE
 For identifying potential LTR-RT Tandems with IDENTAM we need 3 input files:  
-- A transposable element (TE) library with LTRs and internal regions annotated separately
+- A transposable element (TE) library with LTRs and internal regions annotated separately. This library can be created using EDTA_raw.pl. Detailed instructions can be found at: https://github.com/oushujun/EDTA
 - A reference genome
 - A Repeatmasker output 
 
