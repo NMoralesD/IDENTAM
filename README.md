@@ -24,7 +24,7 @@ For identifying potential LTR-RT Tandems with IDENTAM we need 3 input files:
 
 Then, to run IDENTAM, use the following command:
 
-```sh mods/identify_tandems_2modulesv3.sh path/to/reference path/to/TE_library path/to/RepeatMasker_output Distance_between_internal_regions Minimum_internal_region_lenght Minimum_element_lenght Distance_between_LTRs  Maximum_locus_lenght Accession_name```
+```sh mods/IDENTAM.sh path/to/reference path/to/TE_library path/to/RepeatMasker_output Distance_between_internal_regions Minimum_internal_region_lenght Minimum_element_lenght Distance_between_LTRs  Maximum_locus_lenght Accession_name```
 
 As shown in the code, several parameters can be modified. The default parameters are listed below:
 
